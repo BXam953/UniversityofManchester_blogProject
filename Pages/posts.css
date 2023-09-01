@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    margin-bottom: 60px;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #63308c;
+    
+
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+    background-color: white;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+.navitems {
+
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    background-color: transparent;
+    list-style: none;
+    
+}
+
+.toppost{
+    margin-left: 16vw;
+    margin-bottom: 10px;
+    font-size: 20pt;
+
+
+}
+
+.toppost h2{
+    font-weight: 20;
+}
+.navitems a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.navitems a:hover{
+    color: grey;
+}
+
+
+.home {
+    height: 70vh;
+   
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;    
+    background-color: #FAF9F6,;
+    color: black;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    margin-left: 16vw;
+    margin-right: 20vw;
+    justify-content: space-around;
+    align-items: left;
+    font-size: 40pt;
+    height: 30%;
+}
+
+
+.headingH{
+    font-size: 60pt;
+    margin-right: 15vw;
+    font-weight: lighter;
+
+}
+
+.headingB{
+    font-size: 15pt;
+    margin-top: 3vh;
+    
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    font-size: 15pt;
+    border-radius: 30px;
+    width: 20vw;
+    background-color: #63308c;
+}
+
+.link a{
+    
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.heading li {
+    list-style: none;
+}
+
+.postTR, .postBR{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.postTR li, .postBR li{
+    list-style: none;
+    height: 20vw;
+    width: 20vw;
+    background-color: #63308c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 20pt;
+}
+
+.postTR a:hover, .postBR a:hover{
+    color: grey;
+}
+
+.postTR a, .postBR a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    margin-right: 60px;
+    align-items: left;
+}
+
+
+.footer{
+    display: flex;
+    margin-top: 50px;
+    padding-top: 100px;
+    justify-content: space-around;
+    align-items: top;
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.footerlist li{
+    list-style: none;
+}
+
+.footerlist a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1024px){
+    
+    .heading{
+        font-size: 40pt;
+        display: flex;
+        margin-right: 5vw;
+        margin-left: 12vw;
+        align-items: left;
+        justify-content: space-around;
+    }
+    .navitems {
+        width: 50%;
+    } 
+ 
+     .postTR li, .postBR li{
+        font-size: 10pt;
+}
+    
+    
+}
+
+
+@media screen and (max-width:768px){
+
+    *{
+        overflow-x: hidden;
+    }
+    
+   
+    .navitems {
+        position: absolute;
+        right: 0;
+        top: 30vh;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .postTR, .postBR{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .postTR li, .postBR li{
+        width: 82vw;
+        height: 82vw;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .link{
+        width: 40vw;
+        margin-bottom: 50px;
+    }
+
+    .heading{
+        display: flex;
+        align-items: left;
+        height: 60vh;
+        justify-content: space-around;
+        margin-left: 18vw;
+        font-size: 25pt;
+        margin-right: 5vw;
+    }
+    
+}
+
+.showburg {
+    
+    transform: translateX(0%);
+}
